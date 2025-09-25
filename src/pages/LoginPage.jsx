@@ -6,7 +6,7 @@ import { useAuth } from "../context/AuthContext";
 import { useTheme } from "../context/ThemeContext";
 
 const LoginPage = () => {
-  const [email, setEmail] = useState("admin@ecoride.com");
+  const [email, setEmail] = useState("admin@pedismart.com");
   const [password, setPassword] = useState("admin123456");
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("Invalid credentials");
@@ -75,8 +75,8 @@ const LoginPage = () => {
       >
         <div className="flex flex-col items-center justify-center mb-6">
           <img 
-            src="/ecoride_logo.png" 
-            alt="Ecoride Admin Panel" 
+            src="/pedismart_logo.png" 
+            alt="PediSmart Admin Panel" 
             className="h-28 w-auto mb-4"
           />
           <h2 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-800'} transition-colors duration-300`}>Admin Login</h2>

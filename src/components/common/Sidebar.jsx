@@ -52,8 +52,8 @@ const Sidebar = () => {
 							className='flex items-center justify-center mb-2'
 						>
 							<img 
-								src="/ecoride_logo.png" 
-								alt="Ecoride Admin Panel" 
+								src="/pedismart_logo.png" 
+								alt="PediSmart Admin Panel" 
 								className='h-24 w-auto'
 							/>
 						</motion.div>

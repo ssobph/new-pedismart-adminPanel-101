@@ -8,14 +8,14 @@ const Profile = () => {
 		<SettingSection icon={User} title={"Profile"}>
 			<div className='flex flex-col sm:flex-row items-center mb-6'>
 				<img
-					src='/ecoride_logo.png'
+					src='/pedismart_logo.png'
 					alt='Profile'
 					className='rounded-full w-20 h-20 object-cover mr-4'
 				/>
 
 				<div>
 					<h3 className={`text-lg font-semibold ${isDarkMode ? 'text-gray-100' : 'text-gray-800'} transition-colors duration-300`}>System Admin</h3>
-					<p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} transition-colors duration-300`}>ecoride.admin@gmail.com</p>
+					<p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} transition-colors duration-300`}>pedismart.admin@gmail.com</p>
 				</div>
 			</div>
 
