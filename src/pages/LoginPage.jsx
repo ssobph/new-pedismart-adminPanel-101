@@ -6,8 +6,8 @@ import { useAuth } from "../context/AuthContext";
 import { useTheme } from "../context/ThemeContext";
 
 const LoginPage = () => {
-  const [email, setEmail] = useState("admin@pedismart.com");
-  const [password, setPassword] = useState("admin123456");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("Invalid credentials");
   const [loading, setLoading] = useState(false);
@@ -21,7 +21,7 @@ const LoginPage = () => {
     setError(false);
     
     try {
-      console.log("Attempting login with:", email, password);
+      console.log("Attempting admin login...");
       
       // Use the login function from AuthContext
       const success = await login(email, password);
@@ -96,7 +96,7 @@ const LoginPage = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className={`w-full px-4 py-2 ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'} border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-300`}
-              placeholder="admin@ecoride.com"
+              placeholder="Enter admin email"
               required
               disabled={loading}
             />

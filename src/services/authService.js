@@ -6,7 +6,7 @@ export const authService = {
   // Login admin
   login: async (email, password) => {
     try {
-      console.log('Attempting login with:', { email });
+      console.log('Attempting admin login...');
       
       // Use the special admin login endpoint
       const response = await axios.post(`${API_BASE_URL}/api/auth/admin-login`, {
@@ -14,7 +14,7 @@ export const authService = {
         password
       });
       
-      console.log('Login response:', response.data);
+      console.log('Admin login successful');
       
       // Store tokens in localStorage
       localStorage.setItem('admin_access_token', response.data.access_token);
